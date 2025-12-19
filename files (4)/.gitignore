@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data (don't commit large datasets)
+data/*
+!data/.gitkeep
+!data/README.md
+
+# Outputs (don't commit model checkpoints - too large)
+outputs/checkpoints/*.pth
+outputs/checkpoints/*.pt
+outputs/samples/*.png
+outputs/samples/*.jpg
+outputs/logs/*.log
+!outputs/*/.gitkeep
+
+# Experiment-specific
+output_*/
+checkpoints/
+*.pth
+*.pt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS
+.DS_Store
+Thumbs.db
+.DS_Store?
+
+# Colab specific
+drive/
+
+# Environment
+.env
+.envrc
+
+# Temporary extraction files
+cell_*.py
+temp_*.txt
